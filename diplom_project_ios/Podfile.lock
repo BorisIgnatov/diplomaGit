@@ -1,0 +1,70 @@
+PODS:
+  - Alamofire (5.4.1)
+  - KeychainAccess (4.2.1)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - MaterialComponents/ActivityIndicator (119.5.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
+  - MaterialComponents/Palettes (119.5.0)
+  - MaterialComponents/private/Application (119.5.0)
+  - MDFInternationalization (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - SnapKit (5.0.1)
+  - SpreadsheetView (0.9.1)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - KeychainAccess
+  - Kingfisher (~> 5)
+  - MaterialComponents/ActivityIndicator
+  - PromiseKit (~> 6.8)
+  - SnapKit (~> 5)
+  - SpreadsheetView
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainAccess
+    - Kingfisher
+    - MaterialComponents
+    - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
+    - PromiseKit
+    - SnapKit
+    - SpreadsheetView
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  MaterialComponents: 2cdc12c16528ed7e6f1d5bd6d6927c47f9f4e90f
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SpreadsheetView: 688dbd19f2b355df0eb09e486266fd913a013449
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 1cb244dc6829fc17ab8bf52002563a061b72c854
+
+COCOAPODS: 1.10.0
