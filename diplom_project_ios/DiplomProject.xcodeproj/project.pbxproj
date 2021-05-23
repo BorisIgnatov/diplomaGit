@@ -115,6 +115,25 @@
 		B0AF2DB4264DCA6800AED7FE /* SubmitAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF2DB3264DCA6800AED7FE /* SubmitAssignmentView.swift */; };
 		B0AF2DC9264DD6BD00AED7FE /* AssignmentBoxCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF2DC8264DD6BD00AED7FE /* AssignmentBoxCollectionCell.swift */; };
 		B0AF2DCE264DD76C00AED7FE /* AssignmentSmallStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF2DCD264DD76C00AED7FE /* AssignmentSmallStatusView.swift */; };
+		B0F7B15E2656B18B0010D164 /* AssignmentUploadPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B15D2656B18B0010D164 /* AssignmentUploadPage.swift */; };
+		B0F7B1642656B3930010D164 /* AssignmentUploadTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1632656B3930010D164 /* AssignmentUploadTitleCell.swift */; };
+		B0F7B1692656B4E30010D164 /* AssignmentAttachmentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1682656B4E30010D164 /* AssignmentAttachmentListCell.swift */; };
+		B0F7B16E2656B8150010D164 /* GradesDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B16D2656B8150010D164 /* GradesDetailsPage.swift */; };
+		B0F7B1732656B84A0010D164 /* GradesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1722656B84A0010D164 /* GradesHeaderView.swift */; };
+		B0F7B1782656BA410010D164 /* OverallGradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1772656BA410010D164 /* OverallGradeView.swift */; };
+		B0F7B17D2656BC280010D164 /* GradesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B17C2656BC280010D164 /* GradesListView.swift */; };
+		B0F7B18426597F9D0010D164 /* SubjectSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B18326597F9D0010D164 /* SubjectSelectionViewController.swift */; };
+		B0F7B18926597FA80010D164 /* ClassSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B18826597FA80010D164 /* ClassSelectionViewController.swift */; };
+		B0F7B18E26597FC00010D164 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B18D26597FC00010D164 /* AttendanceViewController.swift */; };
+		B0F7B194265981CB0010D164 /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B193265981CB0010D164 /* DateSelectionView.swift */; };
+		B0F7B19C26598A530010D164 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B19B26598A530010D164 /* CameraView.swift */; };
+		B0F7B1A42659A8A70010D164 /* FilePickable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1A32659A8A70010D164 /* FilePickable.swift */; };
+		B0F7B1AC265A37300010D164 /* AttendanceIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1AB265A37300010D164 /* AttendanceIndexCell.swift */; };
+		B0F7B1B1265A379B0010D164 /* AttendanceNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1B0265A379B0010D164 /* AttendanceNameCell.swift */; };
+		B0F7B1B6265A37E40010D164 /* AttendanceWeekIndexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1B5265A37E40010D164 /* AttendanceWeekIndexCell.swift */; };
+		B0F7B1BB265A38740010D164 /* AttendanceValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1BA265A38740010D164 /* AttendanceValueCell.swift */; };
+		B0F7B1C6265A4EFA0010D164 /* DataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1C5265A4EFA0010D164 /* DataExample.swift */; };
+		B0F7B1CB265A4F190010D164 /* AttendanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7B1CA265A4F190010D164 /* AttendanceModel.swift */; };
 		F9E2CCD3AE5D324892ECE7E8 /* Pods_DiplomProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0548D81BAF418E892970C9B1 /* Pods_DiplomProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -253,6 +272,25 @@
 		B0AF2DB3264DCA6800AED7FE /* SubmitAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitAssignmentView.swift; sourceTree = "<group>"; };
 		B0AF2DC8264DD6BD00AED7FE /* AssignmentBoxCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentBoxCollectionCell.swift; sourceTree = "<group>"; };
 		B0AF2DCD264DD76C00AED7FE /* AssignmentSmallStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentSmallStatusView.swift; sourceTree = "<group>"; };
+		B0F7B15D2656B18B0010D164 /* AssignmentUploadPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUploadPage.swift; sourceTree = "<group>"; };
+		B0F7B1632656B3930010D164 /* AssignmentUploadTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUploadTitleCell.swift; sourceTree = "<group>"; };
+		B0F7B1682656B4E30010D164 /* AssignmentAttachmentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentAttachmentListCell.swift; sourceTree = "<group>"; };
+		B0F7B16D2656B8150010D164 /* GradesDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesDetailsPage.swift; sourceTree = "<group>"; };
+		B0F7B1722656B84A0010D164 /* GradesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesHeaderView.swift; sourceTree = "<group>"; };
+		B0F7B1772656BA410010D164 /* OverallGradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallGradeView.swift; sourceTree = "<group>"; };
+		B0F7B17C2656BC280010D164 /* GradesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesListView.swift; sourceTree = "<group>"; };
+		B0F7B18326597F9D0010D164 /* SubjectSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectSelectionViewController.swift; sourceTree = "<group>"; };
+		B0F7B18826597FA80010D164 /* ClassSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSelectionViewController.swift; sourceTree = "<group>"; };
+		B0F7B18D26597FC00010D164 /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		B0F7B193265981CB0010D164 /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
+		B0F7B19B26598A530010D164 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B0F7B1A32659A8A70010D164 /* FilePickable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickable.swift; sourceTree = "<group>"; };
+		B0F7B1AB265A37300010D164 /* AttendanceIndexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceIndexCell.swift; sourceTree = "<group>"; };
+		B0F7B1B0265A379B0010D164 /* AttendanceNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceNameCell.swift; sourceTree = "<group>"; };
+		B0F7B1B5265A37E40010D164 /* AttendanceWeekIndexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceWeekIndexCell.swift; sourceTree = "<group>"; };
+		B0F7B1BA265A38740010D164 /* AttendanceValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceValueCell.swift; sourceTree = "<group>"; };
+		B0F7B1C5265A4EFA0010D164 /* DataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExample.swift; sourceTree = "<group>"; };
+		B0F7B1CA265A4F190010D164 /* AttendanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +431,7 @@
 				B0AF2AE12635FF3A00AED7FE /* Parseable.swift */,
 				B0AF2B0526469B2600AED7FE /* CanDisplayAlerts.swift */,
 				B0AF2B4E2646A75D00AED7FE /* CustomNavigationBarHolder.swift */,
+				B0F7B1A32659A8A70010D164 /* FilePickable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -432,6 +471,7 @@
 				B0AF2B3E2646A47F00AED7FE /* KeychainKey.swift */,
 				B0AF2BCC2646E73400AED7FE /* KeyboardObserver.swift */,
 				B0AF2BE52646EC8B00AED7FE /* ImageDownloader.swift */,
+				B0F7B1C5265A4EFA0010D164 /* DataExample.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -448,6 +488,7 @@
 		B0AF2B452646A67600AED7FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B0F7B18126597F3D0010D164 /* Attendance */,
 				B0AF2CF0264B68DA00AED7FE /* Account */,
 				B0AF2C622648450B00AED7FE /* Grades */,
 				B0AF2C3826480C2B00AED7FE /* Schedule */,
@@ -512,6 +553,7 @@
 		B0AF2BDC2646EA3600AED7FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B0F7B1622656B3720010D164 /* AssignmentUpload */,
 				B0AF2CDE26495A9E00AED7FE /* SubjectAssignment */,
 				B0AF2CBB26487CBE00AED7FE /* AssignmentCell.swift */,
 				B0AF2CC02648844E00AED7FE /* AssignmentStatusView.swift */,
@@ -549,6 +591,7 @@
 			children = (
 				B0AF2C2E2648061C00AED7FE /* SubjectAssignmentsPage.swift */,
 				B0AF2CC526494A7200AED7FE /* AssignmentDetailedPage.swift */,
+				B0F7B15D2656B18B0010D164 /* AssignmentUploadPage.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -604,6 +647,7 @@
 			children = (
 				B0AF2C65264845EA00AED7FE /* GradesListPage.swift */,
 				B0AF2C8D2648573A00AED7FE /* TermSelectionViewController.swift */,
+				B0F7B16D2656B8150010D164 /* GradesDetailsPage.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -624,6 +668,9 @@
 				B0AF2C882648570D00AED7FE /* TermSelectionHeaderView.swift */,
 				B0AF2C972648587600AED7FE /* TermSelectionCell.swift */,
 				B0AF2CAE26485CDA00AED7FE /* TermFieldView.swift */,
+				B0F7B1722656B84A0010D164 /* GradesHeaderView.swift */,
+				B0F7B1772656BA410010D164 /* OverallGradeView.swift */,
+				B0F7B17C2656BC280010D164 /* GradesListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -698,6 +745,56 @@
 				B0AF2D54264D8DCA00AED7FE /* TabBarRouter.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B0F7B1622656B3720010D164 /* AssignmentUpload */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7B1632656B3930010D164 /* AssignmentUploadTitleCell.swift */,
+				B0F7B1682656B4E30010D164 /* AssignmentAttachmentListCell.swift */,
+			);
+			path = AssignmentUpload;
+			sourceTree = "<group>";
+		};
+		B0F7B18126597F3D0010D164 /* Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7B192265981B80010D164 /* Views */,
+				B0F7B18226597F5B0010D164 /* ViewControllers */,
+				B0F7B1CF265A4F1E0010D164 /* Models */,
+			);
+			path = Attendance;
+			sourceTree = "<group>";
+		};
+		B0F7B18226597F5B0010D164 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7B18326597F9D0010D164 /* SubjectSelectionViewController.swift */,
+				B0F7B18826597FA80010D164 /* ClassSelectionViewController.swift */,
+				B0F7B18D26597FC00010D164 /* AttendanceViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B0F7B192265981B80010D164 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7B193265981CB0010D164 /* DateSelectionView.swift */,
+				B0F7B19B26598A530010D164 /* CameraView.swift */,
+				B0F7B1AB265A37300010D164 /* AttendanceIndexCell.swift */,
+				B0F7B1B0265A379B0010D164 /* AttendanceNameCell.swift */,
+				B0F7B1B5265A37E40010D164 /* AttendanceWeekIndexCell.swift */,
+				B0F7B1BA265A38740010D164 /* AttendanceValueCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0F7B1CF265A4F1E0010D164 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7B1CA265A4F190010D164 /* AttendanceModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -891,7 +988,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F7B17D2656BC280010D164 /* GradesListView.swift in Sources */,
 				B0AF2D1E264C402700AED7FE /* UpcomingClassCollectionCell.swift in Sources */,
+				B0F7B1A42659A8A70010D164 /* FilePickable.swift in Sources */,
 				B0AF2C982648587600AED7FE /* TermSelectionCell.swift in Sources */,
 				B0ACF8ED25EFD370000DCBC3 /* MainViewController.swift in Sources */,
 				B0AF2D6C264D9F3800AED7FE /* ClassmateAvatarView.swift in Sources */,
@@ -900,20 +999,25 @@
 				B0AF2D2B264C4A5500AED7FE /* AssignmentsScrollCell.swift in Sources */,
 				B0AF2AD8262CADC400AED7FE /* AppConstants.swift in Sources */,
 				B0AF2B702646A96400AED7FE /* CommonBackBarButtonItem.swift in Sources */,
+				B0F7B18426597F9D0010D164 /* SubjectSelectionViewController.swift in Sources */,
 				B0AF2AA1262C7DB900AED7FE /* ClassNameable.swift in Sources */,
 				B0AF2C3D26480C8600AED7FE /* SchedulePage.swift in Sources */,
 				B0AF2DCE264DD76C00AED7FE /* AssignmentSmallStatusView.swift in Sources */,
+				B0F7B1782656BA410010D164 /* OverallGradeView.swift in Sources */,
 				B0AF2AB7262C7EB100AED7FE /* ResponseCode.swift in Sources */,
 				B0AF2D23264C44E900AED7FE /* UpcomingClassScrollCell.swift in Sources */,
 				B0AF2B0626469B2600AED7FE /* CanDisplayAlerts.swift in Sources */,
 				B0AF2C4526480DAA00AED7FE /* ScheduleCell.swift in Sources */,
 				B0AF2C892648570D00AED7FE /* TermSelectionHeaderView.swift in Sources */,
 				B0AF2A83262C7AEA00AED7FE /* Enpoint.swift in Sources */,
+				B0F7B18926597FA80010D164 /* ClassSelectionViewController.swift in Sources */,
 				B0AF2B472646A6AD00AED7FE /* LoginPage.swift in Sources */,
 				B0AF2DA0264DBE8600AED7FE /* AssignmentSeparatorCell.swift in Sources */,
 				B0AF2A91262C7BFD00AED7FE /* Color.swift in Sources */,
 				B0AF2DA5264DBF5400AED7FE /* AssignmentAttachmentCell.swift in Sources */,
 				B0AF2D9B264DBD6C00AED7FE /* AssignmentDescriptionCell.swift in Sources */,
+				B0F7B16E2656B8150010D164 /* GradesDetailsPage.swift in Sources */,
+				B0F7B15E2656B18B0010D164 /* AssignmentUploadPage.swift in Sources */,
 				B0AF2AFE264696BF00AED7FE /* StandardApiResponse.swift in Sources */,
 				B0ACF8E925EFD370000DCBC3 /* AppDelegate.swift in Sources */,
 				B0AF2AC2262CAC8800AED7FE /* LoadingLayer.swift in Sources */,
@@ -926,19 +1030,25 @@
 				B0AF2CBC26487CBE00AED7FE /* AssignmentCell.swift in Sources */,
 				B0AF2BC82646E70600AED7FE /* CommonTableViewController.swift in Sources */,
 				B0AF2C4F2648139400AED7FE /* DaySelectionView.swift in Sources */,
+				B0F7B1C6265A4EFA0010D164 /* DataExample.swift in Sources */,
 				B0AF2A9B262C7D7400AED7FE /* NetworkService.swift in Sources */,
 				B0ACF8F325EFD370000DCBC3 /* DiplomProject.xcdatamodeld in Sources */,
+				B0F7B1692656B4E30010D164 /* AssignmentAttachmentListCell.swift in Sources */,
 				B0AF2C93264857D000AED7FE /* TermGradesModel.swift in Sources */,
 				B0AF2D76264DA57800AED7FE /* ClassmateModel.swift in Sources */,
+				B0F7B1AC265A37300010D164 /* AttendanceIndexCell.swift in Sources */,
 				B0AF2BDE2646EA6700AED7FE /* CommonTableViewCell.swift in Sources */,
+				B0F7B18E26597FC00010D164 /* AttendanceViewController.swift in Sources */,
 				B0AF2C8E2648573A00AED7FE /* TermSelectionViewController.swift in Sources */,
 				B0AF2AAA262C7E1100AED7FE /* HTTPRequestMethod.swift in Sources */,
 				B0AF2BFE2646F1E500AED7FE /* CommonView.swift in Sources */,
 				B0AF2CF4264B691B00AED7FE /* AccountHeaderCell.swift in Sources */,
 				B0AF2D62264D957E00AED7FE /* ScheduleModel.swift in Sources */,
 				B0AF2BBA2646CB8E00AED7FE /* TabBarController.swift in Sources */,
+				B0F7B1B6265A37E40010D164 /* AttendanceWeekIndexCell.swift in Sources */,
 				B0AF2C66264845EA00AED7FE /* GradesListPage.swift in Sources */,
 				B0AF2C4A2648107D00AED7FE /* ScheduleTeacherView.swift in Sources */,
+				B0F7B1BB265A38740010D164 /* AttendanceValueCell.swift in Sources */,
 				B0AF2B682646A8F200AED7FE /* UITabBarController + Extensions.swift in Sources */,
 				B0AF2DAA264DC45200AED7FE /* AttachmentCollectionCell.swift in Sources */,
 				B0AF2B842646BA3800AED7FE /* DoneAccessoryView.swift in Sources */,
@@ -952,12 +1062,17 @@
 				B0AF2BCD2646E73400AED7FE /* KeyboardObserver.swift in Sources */,
 				B0AF2D0E264C183700AED7FE /* AccountPage.swift in Sources */,
 				B0ACF8EB25EFD370000DCBC3 /* SceneDelegate.swift in Sources */,
+				B0F7B1732656B84A0010D164 /* GradesHeaderView.swift in Sources */,
 				B0AF2C2F2648061C00AED7FE /* SubjectAssignmentsPage.swift in Sources */,
+				B0F7B19C26598A530010D164 /* CameraView.swift in Sources */,
 				B0AF2A96262C7D4400AED7FE /* APIService.swift in Sources */,
 				B0AF2D38264C550F00AED7FE /* DurationView.swift in Sources */,
 				B0AF2CC12648844E00AED7FE /* AssignmentStatusView.swift in Sources */,
 				B0AF2D71264DA51800AED7FE /* ClassmatesPage.swift in Sources */,
+				B0F7B194265981CB0010D164 /* DateSelectionView.swift in Sources */,
+				B0F7B1CB265A4F190010D164 /* AttendanceModel.swift in Sources */,
 				B0AF2AE22635FF3A00AED7FE /* Parseable.swift in Sources */,
+				B0F7B1B1265A379B0010D164 /* AttendanceNameCell.swift in Sources */,
 				B0AF2B0B26469C0600AED7FE /* AppRouter.swift in Sources */,
 				B0AF2CB426487AEF00AED7FE /* AssignmentModel.swift in Sources */,
 				B0AF2D33264C524D00AED7FE /* ScrollCollectionViewCell.swift in Sources */,
@@ -972,6 +1087,7 @@
 				B0AF2B552646A84600AED7FE /* CommonViewController.swift in Sources */,
 				B0AF2C7426484C2600AED7FE /* RowValueCell.swift in Sources */,
 				B0AF2D42264C7B5300AED7FE /* ClassmateScrollCell.swift in Sources */,
+				B0F7B1642656B3930010D164 /* AssignmentUploadTitleCell.swift in Sources */,
 				B0AF2DC9264DD6BD00AED7FE /* AssignmentBoxCollectionCell.swift in Sources */,
 				B0AF2CC626494A7200AED7FE /* AssignmentDetailedPage.swift in Sources */,
 				B0AF2B3F2646A47F00AED7FE /* KeychainKey.swift in Sources */,

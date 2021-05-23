@@ -5,6 +5,7 @@ enum TabItem {
     case schedule
     case grades
     case classroom
+    case attendance
     
     var viewController: UIViewController {
         switch self {
@@ -16,6 +17,8 @@ enum TabItem {
             return GradesListPage()
         case .classroom:
             return SubjectAssignmentsPage()
+        case .attendance:
+            return AttendanceViewController()
         }
     }
     
@@ -32,6 +35,9 @@ enum TabItem {
 
         case .classroom:
             return UITabBarItem(title: nil, image: #imageLiteral(resourceName: "classroom_unselected"), selectedImage: #imageLiteral(resourceName: "classroom_selected"))
+            
+        case .attendance:
+            return UITabBarItem(title: nil, image: #imageLiteral(resourceName: "attendance-icon"), selectedImage: #imageLiteral(resourceName: "attendance-selected"))
         }
     }
 }

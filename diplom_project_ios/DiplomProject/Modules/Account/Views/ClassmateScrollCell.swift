@@ -6,6 +6,8 @@ final class ClassmateScrollCell: ScrollActivityCell {
         "Class 10B:"
     }
     
+    private let mates: [ClassmateModel] = DataExample.classmates()
+    
     override func addElements() {
         super.addElements()
         
@@ -20,7 +22,7 @@ final class ClassmateScrollCell: ScrollActivityCell {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return mates.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -30,14 +32,15 @@ final class ClassmateScrollCell: ScrollActivityCell {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ClassmateCollectionCell.className, for: indexPath) as! ClassmateCollectionCell
         
-        switch indexPath.row {
-        case 0:
-            cell.configure(name: "Saule Turmanova", avatar: "https://i.pinimg.com/originals/70/52/1e/70521e688d924112848396ec220a517b.png", position: .teacher)
-        case 1:
-            cell.configure(name: "Daulet Sergazin", avatar: "https://i.pinimg.com/originals/70/52/1e/70521e688d924112848396ec220a517b.png", position: .head)
+        let position: ClassmateBoxView.BoxType
+        switch mates[indexPath.row].name {
+        case "Turmanova Saule":
+            position = .teacher
         default:
-            cell.configure(name: "Boris Ignatov", avatar: "https://i.pinimg.com/originals/70/52/1e/70521e688d924112848396ec220a517b.png", position: .common)
+            position = .common
         }
+        
+        cell.configure(name: mates[indexPath.row].name, avatar: mates[indexPath.row].imgUrl, position: position)
         
         return cell
     }

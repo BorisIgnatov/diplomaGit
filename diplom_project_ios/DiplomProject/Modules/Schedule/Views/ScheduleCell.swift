@@ -99,9 +99,8 @@ final class ScheduleCell: CommonTableViewCell {
         }
     }
     
-    func configure(with model: ScheduleModel) {
-        let colors: [UIColor] = [.red, .green, .orange]
-        colorIndicator.backgroundColor = colors.randomElement()
+    func configure(with model: ScheduleModel, color: UIColor) {
+        colorIndicator.backgroundColor = color
         locationLabel.text = model.location
         subjectLabel.text = model.subject
         timeLabel.text = model.time

@@ -21,7 +21,7 @@ final class LoadingLayer {
         let indicator = MDCActivityIndicator(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         indicator.backgroundColor = .white
         indicator.layer.cornerRadius = indicator.frame.width / 2
-        indicator.cycleColors = [Color.primary]
+        indicator.cycleColors = [Color.purple]
         indicator.radius = 10
         return indicator
     }()

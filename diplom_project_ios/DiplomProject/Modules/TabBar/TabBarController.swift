@@ -10,6 +10,7 @@ final class TabBarController: UITabBarController {
         tabItems = [
             .classroom,
             .schedule,
+            .attendance,
             .grades,
             .account
         ]
@@ -39,6 +40,8 @@ final class TabBarController: UITabBarController {
     private func setupTabs() {
         tabBar.tintColor = Color.purple
         loadTabItems()
+        
+        selectedIndex = tabItems.count - 1
     }
 }
 

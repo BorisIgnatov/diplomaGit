@@ -50,16 +50,7 @@ final class ClassmatesPage: CommonTableViewController {
         configureGradientBackgroud()
         configureSearchBar()
         
-        let url = "https://i.pinimg.com/originals/70/52/1e/70521e688d924112848396ec220a517b.png"
-        
-        data = [
-            ClassmateModel(name: "Turmanova Saule", imgUrl: url, id: nil, position: "teacher"),
-            ClassmateModel(name: "Tokanov Miras", imgUrl: url, id: "170107667", position: "head"),
-            ClassmateModel(name: "Alibekov Abai", imgUrl: url, id: "170107667", position: "student"),
-            ClassmateModel(name: "Zhangasov Temir", imgUrl: url, id: "170107667", position: "student"),
-            ClassmateModel(name: "Sadeshev Damir", imgUrl: url, id: "170107667", position: "student"),
-            ClassmateModel(name: "Orazbek Aina", imgUrl: url, id: "170107667", position: "student"),
-        ]
+        data = DataExample.classmates()
     }
     
     override func embedTableView() {

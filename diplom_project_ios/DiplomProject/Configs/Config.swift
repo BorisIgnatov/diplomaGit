@@ -5,7 +5,7 @@ final class Config {
     
     static let shared = Config()
     
-    let baseUrl = "https://classrom.kz"
+    let baseUrl = "http://546365095b59.ngrok.io"
     
     func configureUIProxies() {
         UIRefreshControl.appearance().tintColor = Color.purple

@@ -16,15 +16,11 @@ final class GradesListPage: CommonViewController {
     private lazy var currentlySelectedTerm: TermGradesModel? = terms.first {
         didSet {
             headerView.selectedTermTitle = currentlySelectedTerm?.termTitle
+            spreadsheetView.reloadData()
         }
     }
     
-    private let terms: [TermGradesModel] = [
-        TermGradesModel(title: "(2020-2021) 1. Term"),
-        TermGradesModel(title: "(2020-2021) 2. Term"),
-        TermGradesModel(title: "(2020-2021) 3. Term"),
-        TermGradesModel(title: "(2020-2021) 4. Term"),
-    ]
+    private let terms: [TermGradesModel] = DataExample.getTermGradesModel()
     
     private let spreadsheetView = SpreadsheetView()
     
@@ -55,8 +51,6 @@ final class GradesListPage: CommonViewController {
         
         spreadsheetView.register(ColumnIndexCell.self, forCellWithReuseIdentifier: ColumnIndexCell.className)
         spreadsheetView.register(RowValueCell.self, forCellWithReuseIdentifier: RowValueCell.className)
-        
-        currentlySelectedTerm = TermGradesModel(title: "(2020-2021) 1. Term")
     }
     
     private func openSelection() {
@@ -78,7 +72,7 @@ extension GradesListPage: SpreadsheetViewDataSource {
     }
     
     func numberOfRows(in spreadsheetView: SpreadsheetView) -> Int {
-       return 15
+        return (currentlySelectedTerm?.subjects.count ?? 0) + 1
     }
     
     func spreadsheetView(_ spreadsheetView: SpreadsheetView, widthForColumn column: Int) -> CGFloat {
@@ -111,16 +105,20 @@ extension GradesListPage: SpreadsheetViewDataSource {
         }
         
         let cell = spreadsheetView.dequeueReusableCell(withReuseIdentifier: RowValueCell.className, for: indexPath) as? RowValueCell
+        
+        guard let subject = currentlySelectedTerm?.subjects[indexPath.row - 1] else {
+            return cell
+        }
             
         switch indexPath.column {
         case 0:
-            cell?.text = "Mathematics"
+            cell?.text = subject.subjectTitle
             cell?.shouldAlignToRight = false
         case 1:
-            cell?.text = "5 %"
+            cell?.text = "0%"
             cell?.shouldAlignToRight = true
         case 2:
-            cell?.text = "95"
+            cell?.text = subject.overallGrade
             cell?.shouldAlignToRight = true
         default:
             break
@@ -131,5 +129,14 @@ extension GradesListPage: SpreadsheetViewDataSource {
 }
 
 extension GradesListPage: SpreadsheetViewDelegate {
-    
+    func spreadsheetView(_ spreadsheetView: SpreadsheetView, didSelectItemAt indexPath: IndexPath) {
+        guard
+            indexPath.row > 0,
+            let model = currentlySelectedTerm?.subjects[indexPath.row - 1]
+        else { return }
+        
+        let vc = GradesDetailsPage(model: model)
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -11,6 +11,7 @@ final class DateSelectionView: CommonView {
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 20, weight: .semibold)
+        label.textAlignment = .center
         
         return label
     }()
@@ -24,7 +25,7 @@ final class DateSelectionView: CommonView {
     
     private let leftArrow: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "left-arrow")
+        imageView.image = #imageLiteral(resourceName: "right-arrow")
         
         return imageView
     }()
@@ -44,23 +45,25 @@ final class DateSelectionView: CommonView {
         }
         
         addSubview(bottomSeparator)
-        topSeparator.snp.makeConstraints {
+        bottomSeparator.snp.makeConstraints {
             $0.bottom.leading.trailing.equalToSuperview()
             $0.height.equalTo(1)
         }
         
         addSubview(leftArrow)
         leftArrow.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(5)
+            $0.leading.equalToSuperview().offset(10)
             $0.centerY.equalToSuperview()
-            $0.size.equalTo(10)
+            $0.width.equalTo(5)
+            $0.height.equalTo(7)
         }
         
         addSubview(rightArrow)
-        leftArrow.snp.makeConstraints {
-            $0.trailing.equalToSuperview().offset(5)
+        rightArrow.snp.makeConstraints {
+            $0.trailing.equalToSuperview().offset(-10)
             $0.centerY.equalToSuperview()
-            $0.size.equalTo(10)
+            $0.height.equalTo(7)
+            $0.width.equalTo(5)
         }
         
         addSubview(dateLabel)

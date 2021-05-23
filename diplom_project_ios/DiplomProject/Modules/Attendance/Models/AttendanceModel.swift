@@ -1,8 +1,11 @@
-//
-//  AttendanceModel.swift
-//  DiplomProject
-//
-//  Created by Daulet on 23.05.2021.
-//
-
 import Foundation
+
+struct AttendanceModel {
+    let names: [String]
+    let weeks: [String]
+}
+
+struct AttendanceAbsentModel {
+    let name: String
+    let week: String
+}

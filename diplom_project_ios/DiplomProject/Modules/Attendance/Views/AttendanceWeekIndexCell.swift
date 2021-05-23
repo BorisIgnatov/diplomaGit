@@ -1,7 +1,7 @@
 import Foundation
 import SpreadsheetView
 
-final class AttendaceWeekIndexCell: Cell, ClassNameable {
+final class AttendanceWeekIndexCell: Cell, ClassNameable {
     
     var text: String? {
         didSet {

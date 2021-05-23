@@ -52,12 +52,25 @@ final class SchedulePage: CommonTableViewController {
     }
     
     private func dayChanged(_ dayValue: String) {
-        let models: [ScheduleModel] = [
-            ScheduleModel(location: "class 112", subject: "Mathematics", time: "9:00 AM — 10:00 AM", teacher: "Kenzhe Zhaliyeva"),
-            ScheduleModel(location: "class 302", subject: "Russian", time: "10:00 AM — 11:00 AM", teacher: "Asiya Akhmetovna"),
-            ScheduleModel(location: "class 415", subject: "Biology", time: "11:00 AM — 01:00 PM", teacher: "Zhanna Arkadiyevna"),
-            ScheduleModel(location: "Sport hall", subject: "Physical education", time: "01:00 PM — 02:00 PM", teacher: "Anna Petrovna"),
-        ]
+        
+        let models: [ScheduleModel]
+            
+        if dayValue == "MON" {
+            models = [
+                ScheduleModel(location: "class 112", subject: "Mathematics", time: "9:00 AM — 10:00 AM", teacher: "Kenzhe Zhaliyeva"),
+                ScheduleModel(location: "class 302", subject: "Russian", time: "10:00 AM — 11:00 AM", teacher: "Asiya Akhmetovna"),
+                ScheduleModel(location: "class 415", subject: "Biology", time: "11:00 AM — 01:00 PM", teacher: "Zhanna Arkadiyevna"),
+                ScheduleModel(location: "Sport hall", subject: "Physical education", time: "01:00 PM — 02:00 PM", teacher: "Anna Petrovna"),
+            ]
+        } else {
+            models = [
+                ScheduleModel(location: "class 110", subject: "Geometry", time: "9:00 AM — 10:00 AM", teacher: "Kenzhe Zhaliyeva"),
+                ScheduleModel(location: "class 401", subject: "Kazakh", time: "10:00 AM — 11:00 AM", teacher: "Makpal Zhunusovna"),
+                ScheduleModel(location: "class 215", subject: "Chemistry", time: "11:00 AM — 01:00 PM", teacher: "Abylai Erkingalievich"),
+                ScheduleModel(location: "Red hall", subject: "Presentation skills", time: "01:00 PM — 02:00 PM", teacher: "Dmitry Yun"),
+                ScheduleModel(location: "Act hall", subject: "Exam Rules", time: "02:00 PM — 03:00 PM", teacher: "Rahim Ibragivomich"),
+            ]
+        }
         
         data = models
     }
@@ -80,10 +93,19 @@ extension SchedulePage: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ScheduleCell()
-        cell.configure(with: data[indexPath.row])
         
+        let color: UIColor
+        switch data[indexPath.row].subject {
+        case "Mathematics":
+            color = .red
+        case "Russian":
+            color = .green
+        default:
+            color = .orange
+        }
+        
+        cell.configure(with: data[indexPath.row], color: color)
         return cell
     }
-    
     
 }
